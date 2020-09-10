@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rzphlv.nmf.sisilengkung">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Tabung.TabLatihanTabung" />
+        <activity android:name=".Tabung.TabContohSoalTabung" />
+        <activity android:name=".Tabung.KalkulatorTabung" />
+        <activity android:name=".Kerucut.TabLatihanKerucut" />
+        <activity android:name=".Kerucut.TabContohSoalKerucut" />
+        <activity android:name=".Kerucut.KalkulatorKerucut" />
+        <activity android:name=".Bola.KalkulatorBola" />
+        <activity android:name=".Bola.TabLatihanBola" />
+        <activity android:name=".Bola.TabContohSoalBola" />
+        <activity android:name=".Tabung.TabMateriTabung" />
+        <activity android:name=".Kerucut.TabMateriKerucut" />
+        <activity android:name=".Bola.TabMateriBola" />
+        <activity android:name=".Tabung.MateriTabung" />
+        <activity android:name=".Kerucut.MateriKerucut" />
+        <activity android:name=".Bola.MateriBola" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BangunRuang" />
+        <activity android:name=".Biografi" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sisi Lengkung</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="desc_bangun_ruang">Bangun ruang sisi lengkung adalah bangun ruang yang sisinya minimal memiliki satu sisi lengkung dan juga ada yang hanya terdiri dari satu sisi lengkung saja, yaitu bola. Di sekitar kita banyak sekali benda-benda yang merupakan refleksi dari bangun ruang sisi lengkung. Bahkan benda-benda tersebut sering kita gunakan baik sebagai peralatan maupun permainan seperti, gendang lampung, serdam, payung lampung dan benda-benda yang sering kita jumpai. Bangun ruang yang termasuk dalam bangun ruang sisi lengkung adalah tabung, kerucut dan bola.</string>
+    <string name="title_activity_contoh">Contoh</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

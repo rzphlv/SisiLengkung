@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lampung1"
+        tools:context=".BangunRuang">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Bangun Ruang Sisi Lengkung"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <WebView
+                android:id="@+id/pengertian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="tabung"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                cardview:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iconTabung"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/tabung" />
+
+                    <TextView
+                        android:id="@+id/tulisanTabung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toRightOf="@+id/iconTabung"
+                        android:text="Tabung"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="kerucut"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                cardview:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iconKerucut"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/kerucut" />
+
+                    <TextView
+                        android:id="@+id/tulisanKerucut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toRightOf="@+id/iconKerucut"
+                        android:text="Kerucut"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="bola"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                cardview:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iconBola"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/bola" />
+
+                    <TextView
+                        android:id="@+id/tulisanBola"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toRightOf="@+id/iconBola"
+                        android:text="Bola"
+                        android:gravity="center"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom|left"
+        app:elevation="5dp"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

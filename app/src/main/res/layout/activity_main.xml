@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lampung1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Bangun Ruang Sisi Lengkung"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:cardview="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="materi"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            cardview:cardCornerRadius="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconBangunRuang"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bangunruang" />
+
+                <TextView
+                    android:id="@+id/bangunRuang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/iconBangunRuang"
+                    android:text="Materi"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="biografi"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            cardview:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/biografi"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/biografi" />
+
+                <TextView
+                    android:id="@+id/tulisanBiografi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@+id/biografi"
+                    android:text="Biografi"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="exit"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            cardview:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/keluar"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/biografi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@+id/keluar"
+                    android:text="Keluar"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
